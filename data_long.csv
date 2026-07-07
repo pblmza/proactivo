@@ -1,0 +1,325 @@
+id,marca_temporal,anios_experiencia,anios_trabajo_hospital,cargo,sala,interacciones_mes,pregunta,respuesta,respuesta_num
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_responde_oportuno,De acuerdo,4
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_facil_contactar,Muy de acuerdo,5
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_recomendaciones_claras,Ni deacuerdo ni en desacuerdo,3
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_buena_comunicacion,Ni deacuerdo ni en desacuerdo,3
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_mejora_calidad_atencion,Muy de acuerdo,5
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_reduce_carga_trabajo,De acuerdo,4
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_disminuye_conflictos,De acuerdo,4
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_satisfaccion_general,De acuerdo,4
+1,24/4/2025 8:10:01,0,0,Interno/a,Cirugía,4,q_mantener_extender_modelo,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_responde_oportuno,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_facil_contactar,De acuerdo,4
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_recomendaciones_claras,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_buena_comunicacion,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_mejora_calidad_atencion,De acuerdo,4
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_apoyo_manejo_pacientes,De acuerdo,4
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_disminuye_conflictos,De acuerdo,4
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_satisfaccion_general,Muy de acuerdo,5
+2,25/4/2025 10:25:36,1,2 meses,Interno/a,Cirugía,1,q_mantener_extender_modelo,De acuerdo,4
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_responde_oportuno,De acuerdo,4
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_facil_contactar,Muy de acuerdo,5
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_recomendaciones_claras,De acuerdo,4
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_buena_comunicacion,De acuerdo,4
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_continuidad_cuidados,En desacuerdo,2
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_mejora_calidad_atencion,Ni deacuerdo ni en desacuerdo,3
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_apoyo_manejo_pacientes,De acuerdo,4
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_reduce_carga_trabajo,En desacuerdo,2
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_disminuye_conflictos,Ni deacuerdo ni en desacuerdo,3
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_satisfaccion_general,Ni deacuerdo ni en desacuerdo,3
+3,25/4/2025 13:31:20,7,3,Becado/a,Sala L,3,q_mantener_extender_modelo,Ni deacuerdo ni en desacuerdo,3
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_responde_oportuno,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_facil_contactar,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_recomendaciones_claras,De acuerdo,4
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_buena_comunicacion,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_continuidad_cuidados,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_mejora_calidad_atencion,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_perspectiva_biopsicosocial,De acuerdo,4
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_disminuye_conflictos,De acuerdo,4
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_satisfaccion_general,De acuerdo,4
+4,27/4/2025 11:18:14,9,3,Becado/a,Sala L,0,q_mantener_extender_modelo,Muy de acuerdo,5
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_responde_oportuno,De acuerdo,4
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_facil_contactar,Muy de acuerdo,5
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_recomendaciones_claras,En desacuerdo,2
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_buena_comunicacion,De acuerdo,4
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_continuidad_cuidados,Muy en desacuerdo,1
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_mejora_calidad_atencion,Ni deacuerdo ni en desacuerdo,3
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_apoyo_manejo_pacientes,En desacuerdo,2
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_reduce_carga_trabajo,En desacuerdo,2
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_disminuye_conflictos,En desacuerdo,2
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_satisfaccion_general,En desacuerdo,2
+5,29/4/2025 9:20:38,5,1,Becado/a,Sala L,3,q_mantener_extender_modelo,Ni deacuerdo ni en desacuerdo,3
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_responde_oportuno,Muy de acuerdo,5
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_facil_contactar,Muy de acuerdo,5
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_recomendaciones_claras,De acuerdo,4
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_buena_comunicacion,Muy de acuerdo,5
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_continuidad_cuidados,Muy de acuerdo,5
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_mejora_calidad_atencion,Muy de acuerdo,5
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_apoyo_manejo_pacientes,De acuerdo,4
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_reduce_carga_trabajo,De acuerdo,4
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_disminuye_conflictos,De acuerdo,4
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_satisfaccion_general,De acuerdo,4
+6,29/4/2025 10:05:21,7,3,Becado/a,Sala L,4,q_mantener_extender_modelo,Muy de acuerdo,5
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_responde_oportuno,Muy de acuerdo,5
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_facil_contactar,De acuerdo,4
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_recomendaciones_claras,De acuerdo,4
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_buena_comunicacion,De acuerdo,4
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_continuidad_cuidados,De acuerdo,4
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_mejora_calidad_atencion,Muy de acuerdo,5
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_apoyo_manejo_pacientes,Ni deacuerdo ni en desacuerdo,3
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_perspectiva_biopsicosocial,De acuerdo,4
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_disminuye_conflictos,Muy de acuerdo,5
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_satisfaccion_general,Muy de acuerdo,5
+7,29/4/2025 21:55:10,1,1,Becado/a,Agudo,3,q_mantener_extender_modelo,Muy de acuerdo,5
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_responde_oportuno,Muy de acuerdo,5
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_facil_contactar,De acuerdo,4
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_recomendaciones_claras,Muy de acuerdo,5
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_buena_comunicacion,Ni deacuerdo ni en desacuerdo,3
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_mejora_calidad_atencion,Muy de acuerdo,5
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_apoyo_manejo_pacientes,De acuerdo,4
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_disminuye_conflictos,De acuerdo,4
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_satisfaccion_general,De acuerdo,4
+8,30/4/2025 7:35:16,5,1,Becado/a,Traumatología,3,q_mantener_extender_modelo,De acuerdo,4
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_responde_oportuno,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_facil_contactar,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_recomendaciones_claras,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_buena_comunicacion,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_continuidad_cuidados,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_mejora_calidad_atencion,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_reduce_carga_trabajo,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_disminuye_conflictos,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_satisfaccion_general,Muy de acuerdo,5
+9,30/4/2025 8:34:08,3,2,Becado/a,Medico quirurgico cardiológico,4,q_mantener_extender_modelo,Muy de acuerdo,5
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_responde_oportuno,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_facil_contactar,Muy de acuerdo,5
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_recomendaciones_claras,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_buena_comunicacion,Muy de acuerdo,5
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_continuidad_cuidados,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_mejora_calidad_atencion,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_apoyo_manejo_pacientes,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_perspectiva_biopsicosocial,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_disminuye_conflictos,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_satisfaccion_general,De acuerdo,4
+10,30/4/2025 8:39:58,13,1,Becado/a,Sala J,4,q_mantener_extender_modelo,De acuerdo,4
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_responde_oportuno,De acuerdo,4
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_facil_contactar,Muy de acuerdo,5
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_recomendaciones_claras,En desacuerdo,2
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_buena_comunicacion,De acuerdo,4
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_mejora_calidad_atencion,En desacuerdo,2
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_apoyo_manejo_pacientes,De acuerdo,4
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_perspectiva_biopsicosocial,En desacuerdo,2
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_reduce_carga_trabajo,Muy en desacuerdo,1
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_disminuye_conflictos,De acuerdo,4
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_satisfaccion_general,En desacuerdo,2
+11,30/4/2025 14:24:45,7,6,Staff,Sala J,15,q_mantener_extender_modelo,En desacuerdo,2
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_responde_oportuno,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_facil_contactar,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_recomendaciones_claras,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_buena_comunicacion,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_mejora_calidad_atencion,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_reduce_carga_trabajo,De acuerdo,4
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_disminuye_conflictos,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_satisfaccion_general,Muy de acuerdo,5
+12,2/5/2025 7:56:20,2 años de interno en HBLT,0,Interno/a,Cirugía,0,q_mantener_extender_modelo,Muy de acuerdo,5
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_responde_oportuno,De acuerdo,4
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_facil_contactar,Muy de acuerdo,5
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_recomendaciones_claras,De acuerdo,4
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_buena_comunicacion,Muy de acuerdo,5
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_mejora_calidad_atencion,De acuerdo,4
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_apoyo_manejo_pacientes,Ni deacuerdo ni en desacuerdo,3
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_perspectiva_biopsicosocial,De acuerdo,4
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_disminuye_conflictos,En desacuerdo,2
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_satisfaccion_general,Ni deacuerdo ni en desacuerdo,3
+13,7/5/2025 13:30:54,Interno de medicina (6º año),<1,Interno/a,Sala J,20,q_mantener_extender_modelo,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_responde_oportuno,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_facil_contactar,Muy de acuerdo,5
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_recomendaciones_claras,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_buena_comunicacion,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_mejora_calidad_atencion,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_apoyo_manejo_pacientes,Ni deacuerdo ni en desacuerdo,3
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_reduce_carga_trabajo,En desacuerdo,2
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_disminuye_conflictos,Ni deacuerdo ni en desacuerdo,3
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_satisfaccion_general,De acuerdo,4
+14,7/5/2025 21:40:37,4,0,Becado/a,Sala L,2,q_mantener_extender_modelo,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_responde_oportuno,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_facil_contactar,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_recomendaciones_claras,Ni deacuerdo ni en desacuerdo,3
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_buena_comunicacion,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_continuidad_cuidados,En desacuerdo,2
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_mejora_calidad_atencion,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_apoyo_manejo_pacientes,Ni deacuerdo ni en desacuerdo,3
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_perspectiva_biopsicosocial,De acuerdo,4
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_reduce_carga_trabajo,En desacuerdo,2
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_disminuye_conflictos,Ni deacuerdo ni en desacuerdo,3
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_satisfaccion_general,Ni deacuerdo ni en desacuerdo,3
+15,22/6/2026 18:35:39,7,2,Becado/a,Sala J,10,q_mantener_extender_modelo,De acuerdo,4
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_responde_oportuno,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_facil_contactar,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_recomendaciones_claras,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_buena_comunicacion,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_continuidad_cuidados,De acuerdo,4
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_mejora_calidad_atencion,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_reduce_carga_trabajo,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_disminuye_conflictos,De acuerdo,4
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_satisfaccion_general,Muy de acuerdo,5
+16,22/6/2026 20:38:53,5,1,Becado/a,Sala J,2,q_mantener_extender_modelo,Muy de acuerdo,5
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_responde_oportuno,Muy de acuerdo,5
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_facil_contactar,Muy de acuerdo,5
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_recomendaciones_claras,De acuerdo,4
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_buena_comunicacion,Muy de acuerdo,5
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_continuidad_cuidados,De acuerdo,4
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_mejora_calidad_atencion,Ni deacuerdo ni en desacuerdo,3
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_apoyo_manejo_pacientes,De acuerdo,4
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_perspectiva_biopsicosocial,Ni deacuerdo ni en desacuerdo,3
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_reduce_carga_trabajo,Muy en desacuerdo,1
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_disminuye_conflictos,De acuerdo,4
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_satisfaccion_general,De acuerdo,4
+17,23/6/2026 11:45:43,8,7,Staff,Sala J,15,q_mantener_extender_modelo,Ni deacuerdo ni en desacuerdo,3
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_responde_oportuno,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_facil_contactar,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_recomendaciones_claras,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_buena_comunicacion,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_continuidad_cuidados,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_mejora_calidad_atencion,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_reduce_carga_trabajo,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_disminuye_conflictos,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_satisfaccion_general,Muy de acuerdo,5
+18,23/6/2026 12:45:50,0,0,Interno/a,Medico quirurgico cardiológico,1,q_mantener_extender_modelo,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_responde_oportuno,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_facil_contactar,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_recomendaciones_claras,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_buena_comunicacion,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_continuidad_cuidados,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_mejora_calidad_atencion,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_reduce_carga_trabajo,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_disminuye_conflictos,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_satisfaccion_general,Muy de acuerdo,5
+19,23/6/2026 17:58:49,5,1,Becado/a,Agudo,2,q_mantener_extender_modelo,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_responde_oportuno,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_facil_contactar,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_recomendaciones_claras,De acuerdo,4
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_buena_comunicacion,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_continuidad_cuidados,De acuerdo,4
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_mejora_calidad_atencion,De acuerdo,4
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_apoyo_manejo_pacientes,De acuerdo,4
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_disminuye_conflictos,De acuerdo,4
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_satisfaccion_general,Muy de acuerdo,5
+20,24/6/2026 11:34:43,5,5,Staff,Sala L,20,q_mantener_extender_modelo,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_responde_oportuno,De acuerdo,4
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_facil_contactar,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_recomendaciones_claras,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_buena_comunicacion,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_continuidad_cuidados,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_mejora_calidad_atencion,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_reduce_carga_trabajo,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_disminuye_conflictos,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_satisfaccion_general,Muy de acuerdo,5
+21,25/6/2026 10:33:32,1,1,Becado/a,Sala J,3,q_mantener_extender_modelo,Muy de acuerdo,5
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_responde_oportuno,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_facil_contactar,Muy de acuerdo,5
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_recomendaciones_claras,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_buena_comunicacion,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_mejora_calidad_atencion,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_apoyo_manejo_pacientes,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_disminuye_conflictos,De acuerdo,4
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_satisfaccion_general,Muy de acuerdo,5
+22,25/6/2026 15:03:18,3,3,Staff,Traumatología,2,q_mantener_extender_modelo,De acuerdo,4
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_responde_oportuno,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_facil_contactar,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_recomendaciones_claras,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_buena_comunicacion,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_continuidad_cuidados,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_mejora_calidad_atencion,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_perspectiva_biopsicosocial,De acuerdo,4
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_disminuye_conflictos,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_satisfaccion_general,Muy de acuerdo,5
+23,2/7/2026 7:06:04,22,15,Staff,Sala L,8,q_mantener_extender_modelo,Muy de acuerdo,5
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_responde_oportuno,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_facil_contactar,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_recomendaciones_claras,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_buena_comunicacion,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_mejora_calidad_atencion,Muy de acuerdo,5
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_apoyo_manejo_pacientes,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_perspectiva_biopsicosocial,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_disminuye_conflictos,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_satisfaccion_general,De acuerdo,4
+24,2/7/2026 9:22:12,8,6,Staff,Traumatología,16,q_mantener_extender_modelo,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_responde_oportuno,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_facil_contactar,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_recomendaciones_claras,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_buena_comunicacion,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_mejora_calidad_atencion,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_apoyo_manejo_pacientes,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_perspectiva_biopsicosocial,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_reduce_carga_trabajo,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_disminuye_conflictos,Ni deacuerdo ni en desacuerdo,3
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_satisfaccion_general,Muy de acuerdo,5
+25,3/7/2026 10:37:11,5,0,Becado/a,Sala J,1,q_mantener_extender_modelo,Muy de acuerdo,5
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_responde_oportuno,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_facil_contactar,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_recomendaciones_claras,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_buena_comunicacion,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_continuidad_cuidados,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_mejora_calidad_atencion,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_apoyo_manejo_pacientes,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_perspectiva_biopsicosocial,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_reduce_carga_trabajo,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_disminuye_conflictos,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_satisfaccion_general,De acuerdo,4
+26,4/7/2026 2:13:45,5 años,3 meses,Becado/a,Medico quirurgico cardiológico,1,q_mantener_extender_modelo,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_responde_oportuno,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_facil_contactar,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_recomendaciones_claras,Ni deacuerdo ni en desacuerdo,3
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_buena_comunicacion,Muy de acuerdo,5
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_continuidad_cuidados,Ni deacuerdo ni en desacuerdo,3
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_mejora_calidad_atencion,Muy de acuerdo,5
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_apoyo_manejo_pacientes,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_perspectiva_biopsicosocial,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_reduce_carga_trabajo,Ni deacuerdo ni en desacuerdo,3
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_disminuye_conflictos,De acuerdo,4
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_satisfaccion_general,Muy de acuerdo,5
+27,7/7/2026 12:12:43,10,6,Staff,Medico quirurgico cardiológico,15,q_mantener_extender_modelo,Muy de acuerdo,5
