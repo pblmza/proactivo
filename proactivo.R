@@ -4,6 +4,7 @@ library(tidyr)
 library(stringr)
 library(gtsummary)
 library(ggplot2)
+library(ggwordcloud)
 
 data_raw <- read_csv("data.csv")
 
@@ -413,3 +414,22 @@ grafico_palabras <- ggplot(palabras_frecuentes, aes(x = reorder(palabras, n), y 
   theme_minimal(base_size = 12)
 
 ggsave("grafico_palabras_frecuentes.png", grafico_palabras, width = 10, height = 6, dpi = 150)
+
+# ---- 6. Nube de palabras de las respuestas abiertas ----
+
+palabras_nube <- bind_rows(
+  contar_palabras(data_wide$aspectos_positivos, top_n = 40) %>% mutate(tipo = "Aspectos positivos"),
+  contar_palabras(data_wide$aspectos_mejorar, top_n = 40) %>% mutate(tipo = "Aspectos a mejorar")
+)
+
+grafico_nube <- ggplot(palabras_nube, aes(label = palabras, size = n, color = tipo)) +
+  geom_text_wordcloud(rm_outside = TRUE, shape = "circle") +
+  scale_size_area(max_size = 16) +
+  scale_color_manual(values = c("Aspectos positivos" = "#184f95", "Aspectos a mejorar" = "#b23434")) +
+  facet_wrap(~tipo) +
+  labs(title = "Nube de palabras más frecuentes en las respuestas abiertas") +
+  theme_minimal(base_size = 12) +
+  theme(strip.text = element_text(face = "bold", size = 12),
+        plot.title.position = "plot")
+
+ggsave("grafico_nube_palabras.png", grafico_nube, width = 11, height = 6, dpi = 150)
