@@ -116,6 +116,10 @@ caracteristicas_poblacion %>%
   as_gt() %>%
   gt::gtsave("tabla_caracteristicas.html")
 
+caracteristicas_poblacion %>%
+  as_gt() %>%
+  gt::gtsave("tabla_caracteristicas.png", vwidth = 900, zoom = 3)
+
 # ---- Barras apiladas divergentes (Likert) ----
 # La categoría neutra se reparte en dos mitades iguales, una a cada lado del
 # cero, para que "0" quede en el límite entre desacuerdo y acuerdo (técnica
