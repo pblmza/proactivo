@@ -1,0 +1,146 @@
+---
+title: "Percepción del equipo tratante sobre el modelo de psiquiatría de enlace"
+date: "`r format(Sys.Date(), '%d-%m-%Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                       fig.align = "center")
+source("proactivo.R")
+
+rho_experiencia <- with(indice_satisfaccion,
+                         cor(anios_experiencia_num, indice, method = "spearman", use = "complete.obs"))
+rho_interacciones <- with(indice_satisfaccion,
+                           cor(interacciones_mes, indice, method = "spearman", use = "complete.obs"))
+```
+
+## Resumen
+
+Se encuestó a `r nrow(data_wide)` profesionales del equipo tratante (Becado/a,
+Interno/a, Staff) sobre su percepción del modelo de psiquiatría de enlace. La
+escala de 12 ítems Likert tiene una consistencia interna muy alta (alpha de
+Cronbach = `r round(alpha_escala, 2)`), y en general la evaluación es
+favorable: los ítems mejor evaluados son la facilidad de contacto y la
+oportunidad de respuesta del equipo, mientras que los peor evaluados son la
+reducción de la carga de trabajo/estrés y la continuidad de cuidados
+ambulatorios tras el alta — hallazgo que es consistente con los temas que el
+propio equipo tratante menciona espontáneamente como "aspectos a mejorar".
+
+## Metodología
+
+- **Muestra**: `r nrow(data_wide)` respuestas de conveniencia (no aleatoria),
+  de un solo hospital. Se desglosa por cargo (Becado/a n = 15, Interno/a n = 5,
+  Staff n = 7) pero **no** por sala, porque varias salas tienen solo 2-3
+  respuestas y el porcentaje por celda no sería confiable.
+- **Escala Likert**: 12 ítems de acuerdo/desacuerdo a 5 niveles. Se grafican
+  como barras divergentes (técnica estándar para Likert), repartiendo la
+  categoría neutra en dos mitades a cada lado del cero.
+- **Índice de satisfacción**: promedio de los 12 ítems Likert (1-5) por
+  encuestado, correlacionado con años de experiencia y con interacciones
+  mensuales con psiquiatría (Spearman, más robusto que Pearson para escalas
+  ordinales con n pequeño).
+- **Codificación temática**: las respuestas abiertas se codificaron a mano
+  (una respuesta puede tocar más de un tema); el detalle está en
+  [`codificacion_tematica.R`](codificacion_tematica.R) para que sea auditable.
+- **Limitaciones**: ver sección final.
+
+## Características de la población
+
+```{r}
+caracteristicas_poblacion
+```
+
+## Percepción general del equipo tratante
+
+```{r, fig.width=10, fig.height=7}
+grafico_diverging
+```
+
+Los ítems con mayor acuerdo son la facilidad de contacto y la oportunidad de
+respuesta del equipo (100% de acuerdo o muy de acuerdo en ambos). Los de menor
+acuerdo son "reduce la carga de trabajo/estrés" y "continuidad de cuidados
+tras el alta", con una proporción importante de respuestas neutras (41% en
+ambos casos).
+
+## Diferencias por cargo
+
+```{r, fig.width=9, fig.height=7}
+grafico_favorable_cargo
+```
+
+**Nota de lectura**: el grupo Interno/a tiene solo n = 5 respuestas, por lo
+que su porcentaje por celda es poco estable — se muestra de forma descriptiva,
+no debe interpretarse como una diferencia estadísticamente probada entre
+cargos.
+
+## Índice de satisfacción vs. experiencia e interacciones
+
+```{r, fig.width=8, fig.height=6}
+grafico_indice_experiencia
+```
+
+```{r, fig.width=8, fig.height=6}
+grafico_indice_interacciones
+```
+
+La correlación con años de experiencia es rho = `r round(rho_experiencia, 2)`
+y con el número de interacciones mensuales es rho =
+`r round(rho_interacciones, 2)`; ambas deben leerse con cautela dado el n
+disponible.
+
+## Consistencia interna de la escala (alpha de Cronbach)
+
+```{r}
+knitr::kable(alpha_resultado$total, digits = 2, row.names = FALSE)
+```
+
+Un alpha de `r round(alpha_escala, 2)` indica una consistencia interna muy
+alta entre los 12 ítems — es decir, se comportan como una sola escala
+coherente de satisfacción/percepción, y no como preguntas independientes.
+
+## Correlación entre ítems
+
+```{r, fig.width=9, fig.height=8}
+grafico_correlacion
+```
+
+## Temas en las respuestas abiertas
+
+```{r, fig.width=10, fig.height=6}
+grafico_tematico
+```
+
+Entre los **aspectos positivos**, los temas más mencionados son la presencia y
+frecuencia del equipo (rondas diarias) y su proactividad en la pesquisa
+precoz de casos. Entre los **aspectos a mejorar**, después de quienes no
+identifican nada que mejorar, los temas más frecuentes son tener un rol más
+resolutivo (no solo sugerir manejo) y la continuidad del seguimiento
+ambulatorio tras el alta — el mismo patrón que ya aparecía en los ítems
+Likert peor evaluados.
+
+## Limitaciones
+
+- Muestra de conveniencia, pequeña (n = `r nrow(data_wide)`) y de un solo
+  hospital: los resultados no son generalizables a otros centros.
+- Las comparaciones por cargo tienen celdas chicas (Interno/a n = 5); se
+  reportan como descriptivas, no como diferencias con significancia
+  estadística probada.
+- La codificación temática de las respuestas abiertas la realizó un solo
+  codificador, sin una segunda persona que codificara en paralelo para medir
+  acuerdo inter-codificador.
+
+## Conclusiones
+
+El modelo de psiquiatría de enlace es evaluado favorablemente por el equipo
+tratante, con una escala de percepción internamente consistente
+(alpha = `r round(alpha_escala, 2)`). La oportunidad de respuesta y la
+facilidad de contacto son sus mayores fortalezas percibidas. La principal
+oportunidad de mejora, coincidente entre los ítems Likert y las respuestas
+abiertas, es fortalecer la continuidad de cuidados ambulatorios tras el alta y
+un rol más resolutivo del equipo (más allá de la sugerencia farmacológica).

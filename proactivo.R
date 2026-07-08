@@ -4,7 +4,17 @@ library(tidyr)
 library(stringr)
 library(gtsummary)
 library(ggplot2)
-library(ggwordcloud)
+library(psych)
+
+# ---- Paleta y tema compartidos por todos los gráficos ----
+color_azul  <- "#184f95"
+color_rojo  <- "#b23434"
+color_gris  <- "#898781"
+color_claro <- "#fcfcfb"
+color_oscuro <- "#0b0b0b"
+
+tema_base <- theme_minimal(base_size = 12) +
+  theme(plot.title.position = "plot")
 
 data_raw <- read_csv("data.csv")
 
@@ -195,18 +205,18 @@ datos_diverging <- datos_diverging %>%
 # Par divergente rojo/azul con gris neutro al centro; texto claro sobre los
 # tonos oscuros y texto oscuro sobre los tonos claros para mantener contraste.
 colores_likert <- c(
-  "Muy en desacuerdo"             = "#b23434",
+  "Muy en desacuerdo"             = color_rojo,
   "En desacuerdo"                 = "#e88a89",
   "Ni deacuerdo ni en desacuerdo" = "#c9c8c0",
   "De acuerdo"                    = "#86b6ef",
-  "Muy de acuerdo"                = "#184f95"
+  "Muy de acuerdo"                = color_azul
 )
 color_texto_segmento <- c(
-  "Muy en desacuerdo"             = "#fcfcfb",
-  "En desacuerdo"                 = "#0b0b0b",
-  "Ni deacuerdo ni en desacuerdo" = "#0b0b0b",
-  "De acuerdo"                    = "#0b0b0b",
-  "Muy de acuerdo"                = "#fcfcfb"
+  "Muy en desacuerdo"             = color_claro,
+  "En desacuerdo"                 = color_oscuro,
+  "Ni deacuerdo ni en desacuerdo" = color_oscuro,
+  "De acuerdo"                    = color_oscuro,
+  "Muy de acuerdo"                = color_claro
 )
 
 grafico_diverging <- ggplot(datos_diverging) +
@@ -230,12 +240,11 @@ grafico_diverging <- ggplot(datos_diverging) +
     subtitle = paste0("n = ", nrow(data_wide), " encuestados"),
     x = "Porcentaje de respuestas", y = NULL
   ) +
-  theme_minimal(base_size = 12) +
+  tema_base +
   theme(
     panel.grid.major.y = element_blank(),
     panel.grid.minor = element_blank(),
-    legend.position = "bottom",
-    plot.title.position = "plot"
+    legend.position = "bottom"
   )
 
 ggsave("grafico_diverging_likert.png", grafico_diverging, width = 10, height = 7, dpi = 150)
@@ -265,17 +274,17 @@ favorable_por_grupo <- function(datos_long, var_grupo) {
 favorable_cargo <- favorable_por_grupo(data_long, "cargo")
 
 grafico_favorable_cargo <- ggplot(favorable_cargo, aes(x = grupo, y = pregunta_label)) +
-  geom_tile(aes(fill = pct_favorable), color = "#fcfcfb", linewidth = 0.6) +
+  geom_tile(aes(fill = pct_favorable), color = color_claro, linewidth = 0.6) +
   geom_text(aes(label = paste0(round(pct_favorable), "%"), color = color_texto), size = 3.2) +
-  scale_fill_gradient(low = "#e88a89", high = "#184f95", limits = c(0, 100), name = "% favorable") +
-  scale_color_manual(values = c(claro = "#fcfcfb", oscuro = "#0b0b0b"), guide = "none") +
+  scale_fill_gradient(low = "#e88a89", high = color_azul, limits = c(0, 100), name = "% favorable") +
+  scale_color_manual(values = c(claro = color_claro, oscuro = color_oscuro), guide = "none") +
   labs(
     title = "Porcentaje de acuerdo/muy de acuerdo, por cargo",
     subtitle = "% de respuestas 'De acuerdo' o 'Muy de acuerdo' en cada ítem",
     x = NULL, y = NULL
   ) +
-  theme_minimal(base_size = 12) +
-  theme(panel.grid = element_blank(), plot.title.position = "plot")
+  tema_base +
+  theme(panel.grid = element_blank())
 
 ggsave("grafico_favorable_por_cargo.png", grafico_favorable_cargo, width = 9, height = 7, dpi = 150)
 
@@ -294,34 +303,36 @@ indice_satisfaccion <- data_long %>%
   )
 
 grafico_indice_experiencia <- ggplot(indice_satisfaccion, aes(x = anios_experiencia_num, y = indice)) +
-  geom_point(size = 2.5, color = "#184f95", alpha = 0.8) +
-  geom_smooth(method = "lm", se = TRUE, color = "#898781", fill = "#c9c8c0") +
+  geom_point(size = 2.5, color = color_azul, alpha = 0.8) +
+  geom_smooth(method = "lm", se = TRUE, color = color_gris, fill = "#c9c8c0") +
   labs(
     title = "Índice de satisfacción vs. años de experiencia",
     subtitle = paste0(
       "Correlación de Spearman: rho = ",
       round(cor(indice_satisfaccion$anios_experiencia_num, indice_satisfaccion$indice,
-                method = "spearman", use = "complete.obs"), 2)
+                method = "spearman", use = "complete.obs"), 2),
+      " (n = ", sum(complete.cases(indice_satisfaccion[, c("anios_experiencia_num", "indice")])), ")"
     ),
     x = "Años de experiencia", y = "Índice de satisfacción (1-5)"
   ) +
-  theme_minimal(base_size = 12)
+  tema_base
 
 ggsave("grafico_indice_vs_experiencia.png", grafico_indice_experiencia, width = 8, height = 6, dpi = 150)
 
 grafico_indice_interacciones <- ggplot(indice_satisfaccion, aes(x = interacciones_mes, y = indice)) +
-  geom_point(size = 2.5, color = "#184f95", alpha = 0.8) +
-  geom_smooth(method = "lm", se = TRUE, color = "#898781", fill = "#c9c8c0") +
+  geom_point(size = 2.5, color = color_azul, alpha = 0.8) +
+  geom_smooth(method = "lm", se = TRUE, color = color_gris, fill = "#c9c8c0") +
   labs(
     title = "Índice de satisfacción vs. interacciones mensuales",
     subtitle = paste0(
       "Correlación de Spearman: rho = ",
       round(cor(indice_satisfaccion$interacciones_mes, indice_satisfaccion$indice,
-                method = "spearman", use = "complete.obs"), 2)
+                method = "spearman", use = "complete.obs"), 2),
+      " (n = ", sum(complete.cases(indice_satisfaccion[, c("interacciones_mes", "indice")])), ")"
     ),
     x = "Interacciones con psiquiatría en el último mes", y = "Índice de satisfacción (1-5)"
   ) +
-  theme_minimal(base_size = 12)
+  tema_base
 
 ggsave("grafico_indice_vs_interacciones.png", grafico_indice_interacciones, width = 8, height = 6, dpi = 150)
 
@@ -342,30 +353,66 @@ cor_long <- as.data.frame(cor_items) %>%
   )
 
 grafico_correlacion <- ggplot(cor_long, aes(x = item1_label, y = item2_label, fill = rho)) +
-  geom_tile(color = "#fcfcfb") +
+  geom_tile(color = color_claro) +
   geom_text(aes(label = round(rho, 1)), size = 2.6) +
-  scale_fill_gradient2(low = "#b23434", mid = "#f4f3ee", high = "#184f95", midpoint = 0,
+  scale_fill_gradient2(low = color_rojo, mid = "#f4f3ee", high = color_azul, midpoint = 0,
                         limits = c(-1, 1), name = "rho") +
   labs(title = "Correlación entre ítems (Spearman)", x = NULL, y = NULL) +
   theme_minimal(base_size = 10) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid = element_blank())
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid = element_blank(),
+        plot.title.position = "plot")
 
 ggsave("grafico_correlacion_items.png", grafico_correlacion, width = 9, height = 8, dpi = 150)
 
 # ---- 4. Consistencia interna de la escala (alpha de Cronbach) ----
+# Se usa psych::alpha() en vez de calcular el estadístico a mano: además del
+# alpha global entrega la correlación ítem-total y el "alpha si se elimina
+# el ítem", que son los valores que normalmente se reportan para justificar
+# que los 12 ítems conforman una escala coherente.
 
-cronbach_alpha <- function(items) {
-  items <- items[complete.cases(items), ]
-  k <- ncol(items)
-  var_items <- sum(apply(items, 2, var))
-  var_total <- var(rowSums(items))
-  (k / (k - 1)) * (1 - var_items / var_total)
-}
+alpha_resultado <- psych::alpha(matriz_items)
+print(alpha_resultado)
 
-alpha_escala <- cronbach_alpha(matriz_items)
-cat("Alpha de Cronbach para los 12 ítems Likert:", round(alpha_escala, 3), "\n")
+alpha_escala <- alpha_resultado$total$raw_alpha
+cat("Alpha de Cronbach (psych::alpha) para los 12 ítems Likert:", round(alpha_escala, 3), "\n")
 
-# ---- 5. Palabras más frecuentes en las respuestas abiertas ----
+# ---- 5. Codificación temática de las respuestas abiertas ----
+# Con solo 27 respuestas es posible codificarlas a mano en vez de limitarse a
+# contar palabras sueltas (una misma respuesta puede tocar más de un tema).
+# El detalle de qué id se asignó a qué tema queda documentado en
+# codificacion_tematica.R para que la codificación sea auditable/reproducible.
+
+source("codificacion_tematica.R")
+
+n_respondentes_tema <- c(
+  "Aspectos positivos" = n_distinct(temas_positivos$id),
+  "Aspectos a mejorar" = n_distinct(temas_mejorar$id)
+)
+
+resumen_tematico <- bind_rows(
+  temas_positivos %>% mutate(tipo = "Aspectos positivos"),
+  temas_mejorar %>% mutate(tipo = "Aspectos a mejorar")
+) %>%
+  count(tipo, tema, name = "n_respuestas") %>%
+  mutate(pct = 100 * n_respuestas / n_respondentes_tema[tipo])
+
+grafico_tematico <- ggplot(resumen_tematico, aes(x = reorder(tema, n_respuestas), y = n_respuestas, fill = tipo)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~tipo, scales = "free_y") +
+  coord_flip() +
+  scale_fill_manual(values = c("Aspectos positivos" = color_azul, "Aspectos a mejorar" = color_rojo)) +
+  labs(
+    title = "Temas mencionados en las respuestas abiertas",
+    subtitle = "Cada respuesta puede tocar más de un tema; n = número de encuestados que lo mencionan",
+    x = NULL, y = "N° de encuestados"
+  ) +
+  tema_base
+
+ggsave("grafico_tematico.png", grafico_tematico, width = 10, height = 6, dpi = 150)
+
+# ---- 6. Palabras más frecuentes en las respuestas abiertas (exploratorio) ----
+# Complementa la codificación temática de arriba con un conteo crudo de
+# palabras; útil como chequeo rápido, pero menos informativo que los temas.
 
 stopwords_es <- c(
   "a","al","algo","algunas","algunos","ante","antes","como","con","contra",
@@ -406,30 +453,11 @@ grafico_palabras <- ggplot(palabras_frecuentes, aes(x = reorder(palabras, n), y 
   geom_col(show.legend = FALSE) +
   facet_wrap(~tipo, scales = "free") +
   coord_flip() +
-  scale_fill_manual(values = c("Aspectos positivos" = "#184f95", "Aspectos a mejorar" = "#b23434")) +
+  scale_fill_manual(values = c("Aspectos positivos" = color_azul, "Aspectos a mejorar" = color_rojo)) +
   labs(
     title = "Palabras más frecuentes en las respuestas abiertas",
     x = NULL, y = "Frecuencia"
   ) +
-  theme_minimal(base_size = 12)
+  tema_base
 
 ggsave("grafico_palabras_frecuentes.png", grafico_palabras, width = 10, height = 6, dpi = 150)
-
-# ---- 6. Nube de palabras de las respuestas abiertas ----
-
-palabras_nube <- bind_rows(
-  contar_palabras(data_wide$aspectos_positivos, top_n = 40) %>% mutate(tipo = "Aspectos positivos"),
-  contar_palabras(data_wide$aspectos_mejorar, top_n = 40) %>% mutate(tipo = "Aspectos a mejorar")
-)
-
-grafico_nube <- ggplot(palabras_nube, aes(label = palabras, size = n, color = tipo)) +
-  geom_text_wordcloud(rm_outside = TRUE, shape = "circle") +
-  scale_size_area(max_size = 16) +
-  scale_color_manual(values = c("Aspectos positivos" = "#184f95", "Aspectos a mejorar" = "#b23434")) +
-  facet_wrap(~tipo) +
-  labs(title = "Nube de palabras más frecuentes en las respuestas abiertas") +
-  theme_minimal(base_size = 12) +
-  theme(strip.text = element_text(face = "bold", size = 12),
-        plot.title.position = "plot")
-
-ggsave("grafico_nube_palabras.png", grafico_nube, width = 11, height = 6, dpi = 150)
