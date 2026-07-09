@@ -104,6 +104,31 @@ Un alpha de `r round(alpha_escala, 2)` indica una consistencia interna muy
 alta entre los 12 ítems — es decir, se comportan como una sola escala
 coherente de satisfacción/percepción, y no como preguntas independientes.
 
+```{r}
+alpha_drop_tabla <- alpha_resultado$alpha.drop[, c("raw_alpha", "std.alpha")]
+alpha_drop_tabla$r.drop <- alpha_resultado$item.stats[rownames(alpha_drop_tabla), "r.drop"]
+alpha_drop_tabla$item <- etiquetas_preguntas[rownames(alpha_drop_tabla)]
+knitr::kable(
+  alpha_drop_tabla[, c("item", "raw_alpha", "std.alpha", "r.drop")],
+  digits = 2, row.names = FALSE,
+  col.names = c("Ítem", "Alpha si se elimina", "Alpha std. si se elimina", "Correlación ítem-resto")
+)
+```
+
+**Nota metodológica**: el único ítem cuya eliminación *aumenta* el alpha
+(de `r round(alpha_escala, 2)` a
+`r round(alpha_resultado$alpha.drop["q_facil_contactar", "raw_alpha"], 2)`)
+es "Fácil de contactar", con una correlación ítem-resto casi nula
+(`r round(alpha_resultado$item.stats["q_facil_contactar", "r.drop"], 2)`) y
+correlaciones cercanas a cero o negativas con varios de los otros ítems (ver
+matriz de correlación más abajo). Esto sugiere que este ítem captura una
+dimensión distinta —la accesibilidad/logística de contacto con el equipo—
+más que la percepción de valor clínico o satisfacción general que domina el
+resto de la escala. Se optó por mantenerlo dentro del índice compuesto de 12
+ítems, ya que el efecto sobre el alpha es marginal (un punto porcentual), pero
+se deja documentado como limitación a considerar si se quisiera reportar un
+subíndice de "accesibilidad" por separado en análisis futuros.
+
 ## Correlación entre ítems
 
 ```{r, fig.width=9, fig.height=8}
@@ -134,6 +159,10 @@ Likert peor evaluados.
 - La codificación temática de las respuestas abiertas la realizó un solo
   codificador, sin una segunda persona que codificara en paralelo para medir
   acuerdo inter-codificador.
+- El ítem "Fácil de contactar" correlaciona débilmente con el resto de la
+  escala (ver sección de consistencia interna); se mantuvo en el índice
+  compuesto porque el efecto sobre el alpha es marginal, pero probablemente
+  mide accesibilidad más que satisfacción/valor clínico.
 
 ## Conclusiones
 
