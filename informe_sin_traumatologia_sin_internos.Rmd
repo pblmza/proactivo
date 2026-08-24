@@ -1,0 +1,192 @@
+---
+title: "Percepción del equipo tratante sobre el modelo de psiquiatría de enlace (sin Internos ni Traumatología)"
+date: "`r format(Sys.Date(), '%d-%m-%Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                       fig.align = "center")
+source("proactivo_sin_traumatologia_sin_internos.R")
+
+rho_experiencia <- with(indice_satisfaccion,
+                         cor(anios_experiencia_num, indice, method = "spearman", use = "complete.obs"))
+rho_interacciones <- with(indice_satisfaccion,
+                           cor(interacciones_mes, indice, method = "spearman", use = "complete.obs"))
+```
+
+## Resumen
+
+**Esta es una variante de sensibilidad del informe principal que excluye a la
+vez a los 5 encuestados con cargo Interno/a y a los 3 encuestados de la sala
+Traumatología**, dejando solo Becado/a y Staff de las salas restantes, para
+verificar que los resultados no dependan de ninguno de esos dos subgrupos a
+la vez. El resto de la metodología es idéntica; ver
+[`informe.html`](informe.html) para el análisis con la muestra completa
+(n = 27), o los informes de sensibilidad individuales
+[`informe_sin_internos.html`](informe_sin_internos.html) y
+[`informe_sin_traumatologia.html`](informe_sin_traumatologia.html).
+
+Se encuestó a `r nrow(data_wide)` profesionales del equipo tratante (Becado/a,
+Staff) sobre su percepción del modelo de psiquiatría de enlace. La escala de
+12 ítems Likert tiene una consistencia interna muy alta (alpha de
+Cronbach = `r round(alpha_escala, 2)`), y en general la evaluación es
+favorable: los ítems mejor evaluados son la facilidad de contacto y la
+oportunidad de respuesta del equipo, mientras que los peor evaluados son la
+reducción de la carga de trabajo/estrés y la continuidad de cuidados
+ambulatorios tras el alta — hallazgo que es consistente con los temas que el
+propio equipo tratante menciona espontáneamente como "aspectos a mejorar", y
+que se mantiene igual que en el análisis con la muestra completa.
+
+## Metodología
+
+- **Muestra**: `r nrow(data_wide)` respuestas de conveniencia (no aleatoria),
+  de un solo hospital, tras excluir a los 5 encuestados con cargo Interno/a y
+  a los 3 encuestados de la sala Traumatología. Se desglosa por cargo
+  (Becado/a n = 14, Staff n = 5) pero **no** por sala, porque varias salas
+  tienen solo 2-3 respuestas y el porcentaje por celda no sería confiable.
+- **Escala Likert**: 12 ítems de acuerdo/desacuerdo a 5 niveles. Se grafican
+  como barras divergentes (técnica estándar para Likert), repartiendo la
+  categoría neutra en dos mitades a cada lado del cero.
+- **Índice de satisfacción**: promedio de los 12 ítems Likert (1-5) por
+  encuestado, correlacionado con años de experiencia y con interacciones
+  mensuales con psiquiatría (Spearman, más robusto que Pearson para escalas
+  ordinales con n pequeño).
+- **Codificación temática**: las respuestas abiertas se codificaron a mano
+  (una respuesta puede tocar más de un tema); el detalle está en
+  [`codificacion_tematica.R`](codificacion_tematica.R) para que sea auditable.
+- **Limitaciones**: ver sección final.
+
+## Características de la población
+
+```{r}
+caracteristicas_poblacion
+```
+
+## Percepción general del equipo tratante
+
+```{r, fig.width=10, fig.height=7}
+grafico_diverging
+```
+
+Los ítems con mayor acuerdo son la facilidad de contacto y la oportunidad de
+respuesta del equipo (100% de acuerdo o muy de acuerdo en ambos). Los de menor
+acuerdo son "reduce la carga de trabajo/estrés" (32% de respuestas neutras) y
+"continuidad de cuidados tras el alta" (21% de respuestas neutras).
+
+## Diferencias por cargo
+
+```{r, fig.width=9, fig.height=7}
+grafico_favorable_cargo
+```
+
+**Nota de lectura**: al excluir a Interno/a y a Traumatología solo quedan dos
+grupos (Becado/a n = 14, Staff n = 5); el porcentaje por celda de Staff es
+poco estable con ese n — se muestra de forma descriptiva, no debe
+interpretarse como una diferencia estadísticamente probada entre cargos.
+
+## Índice de satisfacción vs. experiencia e interacciones
+
+```{r, fig.width=8, fig.height=6}
+grafico_indice_experiencia
+```
+
+```{r, fig.width=8, fig.height=6}
+grafico_indice_interacciones
+```
+
+La correlación con años de experiencia es rho = `r round(rho_experiencia, 2)`
+y con el número de interacciones mensuales es rho =
+`r round(rho_interacciones, 2)`; ambas deben leerse con cautela dado el n
+disponible.
+
+## Consistencia interna de la escala (alpha de Cronbach)
+
+```{r}
+knitr::kable(alpha_resultado$total, digits = 2, row.names = FALSE)
+```
+
+Un alpha de `r round(alpha_escala, 2)` indica una consistencia interna muy
+alta entre los 12 ítems — es decir, se comportan como una sola escala
+coherente de satisfacción/percepción, y no como preguntas independientes.
+
+```{r}
+alpha_drop_tabla <- alpha_resultado$alpha.drop[, c("raw_alpha", "std.alpha")]
+alpha_drop_tabla$r.drop <- alpha_resultado$item.stats[rownames(alpha_drop_tabla), "r.drop"]
+alpha_drop_tabla$item <- etiquetas_preguntas[rownames(alpha_drop_tabla)]
+knitr::kable(
+  alpha_drop_tabla[, c("item", "raw_alpha", "std.alpha", "r.drop")],
+  digits = 2, row.names = FALSE,
+  col.names = c("Ítem", "Alpha si se elimina", "Alpha std. si se elimina", "Correlación ítem-resto")
+)
+```
+
+**Nota metodológica**: el único ítem cuya eliminación *aumenta* el alpha
+(de `r round(alpha_escala, 2)` a
+`r round(alpha_resultado$alpha.drop["q_facil_contactar", "raw_alpha"], 2)`)
+es "Fácil de contactar", con una correlación ítem-resto casi nula
+(`r round(alpha_resultado$item.stats["q_facil_contactar", "r.drop"], 2)`) y
+correlaciones cercanas a cero o negativas con varios de los otros ítems (ver
+matriz de correlación más abajo). Esto sugiere que este ítem captura una
+dimensión distinta —la accesibilidad/logística de contacto con el equipo—
+más que la percepción de valor clínico o satisfacción general que domina el
+resto de la escala. Se optó por mantenerlo dentro del índice compuesto de 12
+ítems, ya que el efecto sobre el alpha es marginal (un punto porcentual), pero
+se deja documentado como limitación a considerar si se quisiera reportar un
+subíndice de "accesibilidad" por separado en análisis futuros.
+
+## Correlación entre ítems
+
+```{r, fig.width=9, fig.height=8}
+grafico_correlacion
+```
+
+## Temas en las respuestas abiertas
+
+```{r, fig.width=10, fig.height=6}
+grafico_tematico
+```
+
+Entre los **aspectos positivos**, los temas más mencionados son la presencia y
+frecuencia del equipo (rondas diarias) y su proactividad en la pesquisa
+precoz de casos. Entre los **aspectos a mejorar**, después de quienes no
+identifican nada que mejorar, los temas más frecuentes son tener un rol más
+resolutivo (no solo sugerir manejo) y la continuidad del seguimiento
+ambulatorio tras el alta — el mismo patrón que ya aparecía en los ítems
+Likert peor evaluados.
+
+## Limitaciones
+
+- Muestra de conveniencia, pequeña (n = `r nrow(data_wide)`) y de un solo
+  hospital: los resultados no son generalizables a otros centros.
+- Las comparaciones por cargo tienen celdas chicas (Staff n = 5, tras excluir
+  a Interno/a y a Traumatología); se reportan como descriptivas, no como
+  diferencias con significancia estadística probada.
+- La codificación temática de las respuestas abiertas la realizó un solo
+  codificador, sin una segunda persona que codificara en paralelo para medir
+  acuerdo inter-codificador.
+- El ítem "Fácil de contactar" correlaciona débilmente con el resto de la
+  escala (ver sección de consistencia interna); se mantuvo en el índice
+  compuesto porque el efecto sobre el alpha es marginal, pero probablemente
+  mide accesibilidad más que satisfacción/valor clínico.
+
+## Conclusiones
+
+El modelo de psiquiatría de enlace es evaluado favorablemente por el equipo
+tratante, con una escala de percepción internamente consistente
+(alpha = `r round(alpha_escala, 2)`). La oportunidad de respuesta y la
+facilidad de contacto son sus mayores fortalezas percibidas. La principal
+oportunidad de mejora, coincidente entre los ítems Likert y las respuestas
+abiertas, es fortalecer la continuidad de cuidados ambulatorios tras el alta y
+un rol más resolutivo del equipo (más allá de la sugerencia farmacológica).
+
+Excluir simultáneamente a Interno/a y a Traumatología no cambia ninguna de
+estas conclusiones: el orden de los ítems mejor y peor evaluados, el alpha de
+Cronbach y los temas predominantes en las respuestas abiertas se mantienen
+iguales que en el análisis con la muestra completa (n = 27, ver
+[`informe.html`](informe.html)) y que en cada exclusión por separado.
