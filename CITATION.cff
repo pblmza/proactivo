@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si utiliza estos datos o este código, por favor cite el registro archivado en Zenodo."
+title: "Percepción del equipo tratante sobre un modelo de psiquiatría de enlace proactiva: datos y código de análisis"
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/pblmza/proactivo"
+authors:
+  - family-names: "Moreira Zabala"
+    given-names: "Pablo"
+    affiliation: "Hospital Barros Luco Trudeau, Santiago, Chile"
